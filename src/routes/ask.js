@@ -7,7 +7,7 @@ router.get('/', async (req, res) => {
     const result = await askOpenAI();
     res.json(JSON.parse(result.answer));
   } catch (err) {
-    res.status(500).json({ error: 'Erro ao consultar o OpenAI' });
+    res.status(500).json({ error: 'Erro ao consultar o OpenAI'});
   }
 });
 
